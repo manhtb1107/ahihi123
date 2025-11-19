@@ -11,8 +11,9 @@
     margin: 0 auto;
 }
 header{
-    background: #ddd;
-    padding: 5px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 10px 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 header .container .content__header{
     display: flex;
@@ -52,25 +53,252 @@ header .container .content__header .menu__header nav .nav__link li{
 }
 header .container .content__header .menu__header nav .nav__link li a{
     text-decoration: none;
-    color: #000;
-    font-weight: 400;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 5px;
 }
 header .container .content__header .menu__header nav .nav__link li a:hover{
-    text-decoration: underline;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
 }
 header .container .content__header .card__head{
     flex-basis: 10%;
 }
 .A {
-   
     margin-left: 50px;
-  }
-  
+}
+
 .A a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
-  }
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.A a:hover {
+    opacity: 0.8;
+}
 /* end header */
+
+/* Dashboard Overview */
+.dashboard__overview {
+    padding: 30px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.dashboard__title {
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.stats__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stat__card {
+    flex: 1;
+    min-width: 250px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.stat__icon {
+    font-size: 48px;
+    color: #667eea;
+}
+
+.stat__info h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.stat__info p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0 0 0;
+}
+
+/* Student Section */
+.student__section {
+    padding: 30px 0;
+}
+
+.student__list {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.student__list .card {
+    flex-basis: 18%;
+    margin: 10px 5px;
+}
+
+.student__list .card .items {
+    position: relative;
+    display: block;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #667eea;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.student__list .card .items:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+    border-color: #764ba2;
+}
+
+.student__list .card .items .image {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+}
+
+.student__list .card .items .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.student__list .card .items .text {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.student__list .card .items .text h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.student__list .card .items .text p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.student__list .card .items .text p.grade {
+    font-weight: 600;
+    color: #667eea;
+    font-size: 16px;
+}
+
+.student__list .card .items .status {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.badge.excellent {
+    background: #4CAF50;
+    color: #fff;
+}
+
+.badge.good {
+    background: #2196F3;
+    color: #fff;
+}
+
+/* Statistics Section */
+.statistics__section {
+    padding: 30px 0;
+    background: #f5f5f5;
+}
+
+.stats__grid {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.stats__grid .card {
+    flex-basis: 22%;
+    min-width: 250px;
+}
+
+.stats__grid .card .items.stat__card__faculty {
+    padding: 25px;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+}
+
+.stats__grid .card .items.stat__card__faculty:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.6);
+}
+
+.faculty__header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faculty__header i {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.faculty__header h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.faculty__stats {
+    text-align: left;
+}
+
+.faculty__stats p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.faculty__stats strong {
+    font-weight: 600;
+}
+
+/* end dashboard styles */
 .slide__body .container .container_slide{
     position: relative;
     width: 100%;
@@ -110,16 +338,23 @@ header .container .content__header .card__head{
 .body_product{
     padding: 30px 0;
 }
-.body_product .container .title{
+.body_product .container .title,
+.student__section .container .title,
+.statistics__section .container .title {
     width: 100%;
     text-align: center;
-    background: #ddd;
-    padding: 15px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-.body_product .container .title h3{
+.body_product .container .title h3,
+.student__section .container .title h3,
+.statistics__section .container .title h3 {
     text-transform: uppercase;
-    font-weight:600;
-    letter-spacing: 1px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
 }
 .body_product .container .show_product{
     margin: 30px 0;

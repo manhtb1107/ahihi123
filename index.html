@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DUY MANH SHOP</title>
+    <title>Hệ Thống Quản Lý Sinh Viên</title>
     <scrip src="jquery-3.7.1.min.js"></scrip>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,549 +19,290 @@
                 <div class="menu__header">
                     <nav>
                         <ul class="nav__link">
-                            <li><a href="">Trang chủ</a></li>
-                            <li><a href="">Giới thiệu</a></li>
-                            <li><a href="">Sản phẩm</a></li>
-                            <li><a href="">Liên hệ</a></li>
+                            <li><a href="">Tổng quan</a></li>
+                            <li><a href="">Danh sách sinh viên</a></li>
+                            <li><a href="">Điểm số</a></li>
+                            <li><a href="">Thống kê</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="A">
-                    <a href="login.html">Đăng nhập</a> | 
-                    <a href="login.html">Đăng ký</a>
+                    <a href="login.html">Đăng nhập</a> |
+                    <a href="login.html">Đăng xuất</a>
                   </div>
-                <div class="card__head">
-                    <div class="card" id="popup_card">
-                        <img src="/Group 16.png" alt="">
-                        <span>3</span>
-                    </div>
-                </div>
         </div>
     </header>
     <!-- end header -->
-    <!-- slides -->
-    <section class="slide__body">
+    <!-- Dashboard Overview -->
+    <section class="dashboard__overview">
         <div class="container">
-            <div class="container_slide">
-                <div class="slides">
-                    <div class="item">
-                        <img src="Rectangle 3.png" alt="">
+            <h2 class="dashboard__title">Tổng Quan Sinh Viên</h2>
+            <div class="stats__container">
+                <div class="stat__card">
+                    <div class="stat__icon">
+                        <i class="fas fa-users"></i>
                     </div>
-                    <div class="item">
-                        <img src="Rectangle 3.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="Rectangle 3.png" alt="">
-                    </div>
-                </div>
-                <div class="next"><i class="fas fa-arrow-right"></i></div>
-                <div class="prev"><i class="fas fa-arrow-left"></i></div>
-            </div>
-        </div>
-    </section>
-    <!-- end slides -->
-    <!-- Body product one -->
-    <section class="body_product">
-        <div class="container">
-            <div class="title"><h3>Sản phẩm bán chạy</h3></div>
-            <div class="show_product">
-                <div class="card">
-                    <div class="items">
-                        <div class="image">
-                            <a href="tuidep1.html"> <img src="Img (2).png" alt=""></a>
-                        </div>
-                        <div class="text">
-                            <h3>Túi xách </h3>
-                            <p>200.000 đ</p>
-                        </div>
-                        <div class="color">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+                    <div class="stat__info">
+                        <h3>1,245</h3>
+                        <p>Tổng số sinh viên</p>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="items">
-                        <div class="image">
-                         <a href="" ></a>   <img src="Img (2).png" alt="">
-                        </div>
-                        <div class="text">
-                            <h3>Túi xách </h3>
-                            <p>200.000 đ</p>
-                        </div>
-                        <div class="color">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                      
+                <div class="stat__card">
+                    <div class="stat__icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="stat__info">
+                        <h3>856</h3>
+                        <p>Sinh viên đang học</p>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="items">
-                        <div class="image">
-                            <a href="tuidep1.html" ><img src="Img (2).png" alt=""></a> 
-                        </div>
-                        <div class="text">
-                            <h3>Túi xách </h3>
-                            <p>200.000 đ</p>
-                        </div>
-                        <div class="color">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                       
+                <div class="stat__card">
+                    <div class="stat__icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="stat__info">
+                        <h3>389</h3>
+                        <p>Sinh viên giỏi</p>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="items">
-                        <div class="image">
-                            <a href="tuidep1.html" ><img src="Img (2).png" alt=""></a> 
-                        </div>
-                        <div class="text">
-                            <h3>Túi xách </h3>
-                            <p>200.000 đ</p>
-                        </div>
-                        <div class="color">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                       
+                <div class="stat__card">
+                    <div class="stat__icon">
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="items">
-                        <div class="image">
-                            <a href="tuidep2.html" ><img src="Img (4).png" alt=""></a> 
-                        </div>
-                        <div class="text">
-                            <h3>Túi xách </h3>
-                            <p>200.000 đ</p>
-                        </div>
-                        <div class="color">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                      
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="items">
-                        <div class="image">
-                            <a href="2" ><img src="Img (4).png" alt=""></a> 
-                        </div>
-                        <div class="text">
-                            <h3>Túi xách </h3>
-                            <p>200.000 đ</p>
-                        </div>
-                        <div class="color">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="items">
-                        <div class="image">
-                            <a href="" ></a>    <img src="Img (4).png" alt="">
-                        </div>
-                        <div class="text">
-                            <h3>Túi xách </h3>
-                            <p>200.000 đ</p>
-                        </div>
-                        <div class="color">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="items">
-                        <div class="image">
-                            <a href="" ></a>     <img src="Img (4).png" alt="">
-                        </div>
-                        <div class="text">
-                            <h3>Túi xách </h3>
-                            <p>200.000 đ</p>
-                        </div>
-                        <div class="color">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="items">
-                        <div class="image">
-                            <a href="" ></a>    <img src="/Img (4).png" alt="">
-                        </div>
-                        <div class="text">
-                            <h3>Túi xách </h3>
-                            <p>200.000 đ</p>
-                        </div>
-                        <div class="color">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="items">
-                        <div class="image">
-                            <a href="" ></a>    <img src="/Img (1).png" alt="">
-                        </div>
-                        <div class="text">
-                            <h3>Túi xách </h3>
-                            <p>200.000 đ</p>
-                        </div>
-                        <div class="color">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                       
+                    <div class="stat__info">
+                        <h3>7.8</h3>
+                        <p>Điểm TB chung</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- end Body product one -->
-     <!-- Body product discount -->
-     <section class="body_product discount">
+    <!-- end Dashboard Overview -->
+    <!-- Student List -->
+    <section class="student__section">
         <div class="container">
-            <div class="title"><h3>Sản phẩm khuyến mãi</h3></div>
-            <div class="show_product">
+            <div class="title"><h3>Danh Sách Sinh Viên Tiêu Biểu</h3></div>
+            <div class="student__list">
                 <div class="card">
                     <div class="items">
                         <div class="image">
-                            <a href="" ></a>      <img src="/Img (1).png" alt="">
+                            <img src="OIP.jpg" alt="Avatar sinh viên">
                         </div>
                         <div class="text">
-                            <h3>Túi xách </h3>
-                            <span><s>200.000đ</s></span>
-                            <span>175.000đ</span>
+                            <h3>Nguyễn Văn A</h3>
+                            <p>MSV: 2021001</p>
+                            <p class="grade">GPA: 8.5</p>
                         </div>
-                        <span class="discount">25%</span>
-                        <div class="color">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                        <div class="status">
+                            <span class="badge excellent">Giỏi</span>
                         </div>
-                       
                     </div>
                 </div>
                 <div class="card">
                     <div class="items">
                         <div class="image">
-                            <a href="" ></a>    <img src="/Img (1).png" alt="">
+                            <img src="OIP.jpg" alt="Avatar sinh viên">
                         </div>
                         <div class="text">
-                            <h3>Túi xách </h3>
-                            <span><s>200.000đ</s></span>
-                            <span>175.000đ</span>
+                            <h3>Trần Thị B</h3>
+                            <p>MSV: 2021002</p>
+                            <p class="grade">GPA: 8.2</p>
                         </div>
-                        <span class="discount">25%</span>
-                        <div class="color">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                        <div class="status">
+                            <span class="badge excellent">Giỏi</span>
                         </div>
-                       
                     </div>
                 </div>
                 <div class="card">
                     <div class="items">
                         <div class="image">
-                            <a href="" ></a>     <img src="/Img (3).png" alt="">
+                            <img src="OIP.jpg" alt="Avatar sinh viên">
                         </div>
                         <div class="text">
-                            <h3>Túi xách </h3>
-                            <span><s>200.000đ</s></span>
-                            <span>175.000đ</span>
+                            <h3>Lê Văn C</h3>
+                            <p>MSV: 2021003</p>
+                            <p class="grade">GPA: 7.9</p>
                         </div>
-                        <span class="discount">25%</span>
-                        <div class="color">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                        <div class="status">
+                            <span class="badge good">Khá</span>
                         </div>
-                       
                     </div>
                 </div>
                 <div class="card">
                     <div class="items">
                         <div class="image">
-                            <a href="" ></a>    <img src="/Img (3).png" alt="">
+                            <img src="OIP.jpg" alt="Avatar sinh viên">
                         </div>
                         <div class="text">
-                            <h3>Túi xách </h3>
-                            <span><s>200.000đ</s></span>
-                            <span>175.000đ</span>
+                            <h3>Phạm Thị D</h3>
+                            <p>MSV: 2021004</p>
+                            <p class="grade">GPA: 8.7</p>
                         </div>
-                        <span class="discount">25%</span>
-                        <div class="color">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                        <div class="status">
+                            <span class="badge excellent">Giỏi</span>
                         </div>
-                       
                     </div>
                 </div>
                 <div class="card">
                     <div class="items">
                         <div class="image">
-                            <a href="" ></a>    <img src="/Img (4).png" alt="">
+                            <img src="OIP.jpg" alt="Avatar sinh viên">
                         </div>
                         <div class="text">
-                            <h3>Túi xách </h3>
-                            <span><s>200.000đ</s></span>
-                            <span>175.000đ</span>
+                            <h3>Hoàng Văn E</h3>
+                            <p>MSV: 2021005</p>
+                            <p class="grade">GPA: 7.5</p>
                         </div>
-                        <span class="discount">25%</span>
-                        <div class="color">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                        <div class="status">
+                            <span class="badge good">Khá</span>
                         </div>
-                      
                     </div>
                 </div>
                 <div class="card">
                     <div class="items">
                         <div class="image">
-                            <a href="" ></a>    <img src="/Img (1).png" alt="">
+                            <img src="OIP.jpg" alt="Avatar sinh viên">
                         </div>
                         <div class="text">
-                            <h3>Túi xách </h3>
-                            <span><s>200.000đ</s></span>
-                            <span>175.000đ</span>
+                            <h3>Đỗ Thị F</h3>
+                            <p>MSV: 2021006</p>
+                            <p class="grade">GPA: 8.9</p>
                         </div>
-                        <span class="discount">25%</span>
-                        <div class="color">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                        <div class="status">
+                            <span class="badge excellent">Giỏi</span>
                         </div>
-                       
                     </div>
                 </div>
                 <div class="card">
                     <div class="items">
                         <div class="image">
-                            <a href="" ></a>    <img src="/Img (1).png" alt="">
+                            <img src="OIP.jpg" alt="Avatar sinh viên">
                         </div>
                         <div class="text">
-                            <h3>Túi xách </h3>
-                            <span><s>200.000đ</s></span>
-                            <span>175.000đ</span>
+                            <h3>Vũ Văn G</h3>
+                            <p>MSV: 2021007</p>
+                            <p class="grade">GPA: 7.8</p>
                         </div>
-                        <span class="discount">25%</span>
-                        <div class="color">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                        <div class="status">
+                            <span class="badge good">Khá</span>
                         </div>
-                       
                     </div>
                 </div>
                 <div class="card">
                     <div class="items">
                         <div class="image">
-                            <a href="" ></a>   <img src="/Img (4).png" alt="">
+                            <img src="OIP.jpg" alt="Avatar sinh viên">
                         </div>
                         <div class="text">
-                            <h3>Túi xách </h3>
-                            <span><s>200.000đ</s></span>
-                            <span>175.000đ</span>
+                            <h3>Bùi Thị H</h3>
+                            <p>MSV: 2021008</p>
+                            <p class="grade">GPA: 8.3</p>
                         </div>
-                        <span class="discount">25%</span>
-                        <div class="color">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                        <div class="status">
+                            <span class="badge excellent">Giỏi</span>
                         </div>
-                       
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="items">
-                        <div class="image">
-                            <a href="" ></a>    <img src="/Img (4).png" alt="">
-                        </div>
-                        <div class="text">
-                            <h3>Túi xách </h3>
-                            <span><s>200.000đ</s></span>
-                            <span>175.000đ</span>
-                        </div>
-                        <span class="discount">25%</span>
-                        <div class="color">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="items">
-                        <div class="image">
-                            <a href="" ></a>    <img src="/Img (4).png" alt="">
-                        </div>
-                        <div class="text">
-                            <h3>Túi xách </h3>
-                            <span><s>200.000đ</s></span>
-                            <span>175.000đ</span>
-                        </div>
-                        <span class="discount">25%</span>
-                        <div class="color">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                       
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- end Body product discount -->
+    <!-- end Student List -->
+     <!-- Statistics Section -->
+     <section class="statistics__section">
+        <div class="container">
+            <div class="title"><h3>Thống Kê Theo Khoa</h3></div>
+            <div class="stats__grid">
+                <div class="card">
+                    <div class="items stat__card__faculty">
+                        <div class="faculty__header">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Công Nghệ Thông Tin</h3>
+                        </div>
+                        <div class="faculty__stats">
+                            <p><strong>Tổng SV:</strong> 450</p>
+                            <p><strong>GPA TB:</strong> 8.2</p>
+                            <p><strong>Tỷ lệ giỏi:</strong> 35%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="items stat__card__faculty">
+                        <div class="faculty__header">
+                            <i class="fas fa-calculator"></i>
+                            <h3>Toán - Tin Học</h3>
+                        </div>
+                        <div class="faculty__stats">
+                            <p><strong>Tổng SV:</strong> 320</p>
+                            <p><strong>GPA TB:</strong> 7.9</p>
+                            <p><strong>Tỷ lệ giỏi:</strong> 28%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="items stat__card__faculty">
+                        <div class="faculty__header">
+                            <i class="fas fa-flask"></i>
+                            <h3>Hóa Học</h3>
+                        </div>
+                        <div class="faculty__stats">
+                            <p><strong>Tổng SV:</strong> 280</p>
+                            <p><strong>GPA TB:</strong> 7.5</p>
+                            <p><strong>Tỷ lệ giỏi:</strong> 22%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="items stat__card__faculty">
+                        <div class="faculty__header">
+                            <i class="fas fa-atom"></i>
+                            <h3>Vật Lý</h3>
+                        </div>
+                        <div class="faculty__stats">
+                            <p><strong>Tổng SV:</strong> 195</p>
+                            <p><strong>GPA TB:</strong> 7.7</p>
+                            <p><strong>Tỷ lệ giỏi:</strong> 25%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Statistics Section -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-4">
-                    <h3 class="name_website">ĐOÀN DUY MẠNH</h3>
+                    <h3 class="name_website">HỆ THỐNG QUẢN LÝ SINH VIÊN</h3>
                     <div>
-                        <a href="" ></a>    <img src="/logo.jpg" alt="">
+                        <img src="/logo.jpg" alt="">
                     </div>
                     <p>
-                        MSV : 1771020451<br>
-                        Email : manhdzskt11@gmail.com
+                        Quản lý thông tin sinh viên hiệu quả<br>
+                        Email: qlsv@university.edu.vn
                     </p>
                 </div>
                 <div class="col-4">
-                    <h3 class="title">Địa chỉ shop </h3>
+                    <h3 class="title">Liên hệ</h3>
                     <ul>
-                        <li><a href="">Hà Đông - Hà Nội</a></li>
-                        <li><a href="">Bình Thạnh - TPHCM</a></li>
-                        <li><a href="">Tiền Hải - Thái Bình</a></li>
-                        <li><a href="">Cầu Giấy - Hà Nội</a></li>
+                        <li><a href="">Phòng Đào tạo</a></li>
+                        <li><a href="">Phòng Công tác sinh viên</a></li>
+                        <li><a href="">Thư viện</a></li>
+                        <li><a href="">Hỗ trợ kỹ thuật</a></li>
                     </ul>
                 </div>
                 <div class="col-4">
-                    <h3 class="title">Chăm sóc khách hàng </h3>
+                    <h3 class="title">Dịch vụ sinh viên</h3>
                     <ul>
-                        <li><a href="">Chính sách bảo hành</a></li>
-                        <li><a href="">Hướng dẫn mua bán</a></li>
-                        <li><a href="">Vận chuyển</a></li>
-                        <li><a href="">Thanh toán</a></li>
+                        <li><a href="">Tra cứu điểm</a></li>
+                        <li><a href="">Đăng ký học phần</a></li>
+                        <li><a href="">Lịch thi</a></li>
+                        <li><a href="">Học phí</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <p class="copyriht">Website design By Duy Manh @Nocopyright</p>
+        <p class="copyriht">Hệ thống quản lý sinh viên - Phát triển bởi Khoa CNTT</p>
     </footer>
-    <div class="overlay"></div>
-    <div class="popup_shopping">
-        <div class="body_shopping">
-            <table>
-                <thead>
-                    <tr>
-                        <th>STT</th>
-                        <th>Tên sản phẩm</th>
-                        <th>Giá</th>
-                        <th>Số lượng</th>
-                        <th>Hành động</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Túi xách V.P.1</td>
-                        <td>200.000</td>
-                        <td>10</td>
-                        <td>
-                            <a href="">Delete</a>
-                            <a href="">Add</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Túi xách V.P.1</td>
-                        <td>100.000</td>
-                        <td>5</td>
-                        <td>
-                            <a href="">Delete</a>
-                            <a href="">Add</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Túi xách V.P.1</td>
-                        <td>300.000</td>
-                        <td>10</td>
-                        <td>
-                            <a href="">Delete</a>
-                            <a href="">Add</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="close">
-                <button type="button" class="button">Close</button>
-            </div>
-        </div>
-    </div>
-<script src="slide.js"></script>
 <script src="https://kit.fontawesome.com/03bca92048.js" crossorigin="anonymous"></script>
-<script>
-    let popup_card = document.getElementById('popup_card');
-    let popup = document.querySelector('.popup_shopping');
-    let overlay = document.querySelector('.overlay');
-    let button = document.querySelector('button.button');
-    popup_card.addEventListener("click",()=>{
-        popup.classList.add('active');
-        overlay.classList.add('active');
-    });
-    overlay.addEventListener("click",()=>{
-        popup.classList.remove('active');
-        overlay.classList.remove('active');
-    });
-    button.addEventListener("click",()=>{
-        popup.classList.remove('active');
-        overlay.classList.remove('active');
-    });
-</script>
 </body>
 </html>
