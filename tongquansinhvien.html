@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tổng Quan Sinh Viên</title>
+    <link rel="stylesheet" href="tongquansinhvien.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="content__header">
+                <div class="logo__header">
+                    <img src="/logo.jpg" alt="">
+                </div>
+                <div class="menu__header">
+                    <nav>
+                        <ul class="nav__link">
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="tongquansinhvien.html" class="active">Tổng quan sinh viên</a></li>
+                            <li><a href="">Thông tin</a></li>
+                            <li><a href="">Liên hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="A">
+                    <a href="login.html">Đăng nhập</a> | 
+                    <a href="login.html">Đăng ký</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- Student Dashboard -->
+    <section class="dashboard">
+        <div class="container">
+            <div class="dashboard-header">
+                <h1>Tổng Quan Sinh Viên</h1>
+                <p class="welcome-text">Chào mừng bạn đến với hệ thống quản lý sinh viên</p>
+            </div>
+
+            <!-- Student Profile Card -->
+            <div class="profile-section">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="/OIP.jpg" alt="Student Avatar">
+                    </div>
+                    <div class="profile-info">
+                        <h2>Đoàn Duy Mạnh</h2>
+                        <p class="student-id"><i class="fas fa-id-card"></i> MSV: 1771020451</p>
+                        <p class="student-major"><i class="fas fa-graduation-cap"></i> Ngành: Công nghệ thông tin</p>
+                        <p class="student-class"><i class="fas fa-users"></i> Lớp: CNTT K17</p>
+                        <p class="student-email"><i class="fas fa-envelope"></i> Email: manhdzskt11@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon blue">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>12</h3>
+                        <p>Môn học đang học</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon green">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>3.45</h3>
+                        <p>Điểm trung bình (GPA)</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon orange">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>92%</h3>
+                        <p>Tỷ lệ điểm danh</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon purple">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>108/120</h3>
+                        <p>Tín chỉ tích lũy</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <h2 class="section-title">Thao tác nhanh</h2>
+                <div class="actions-grid">
+                    <button class="action-btn">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Xem thời khóa biểu</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Xem điểm số</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-tasks"></i>
+                        <span>Bài tập</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>Học phí</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-book-reader"></i>
+                        <span>Đăng ký môn học</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-certificate"></i>
+                        <span>Chứng chỉ</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Recent Activities and Notifications -->
+            <div class="content-grid">
+                <div class="activities-section">
+                    <h2 class="section-title">Hoạt động gần đây</h2>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon blue">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>Hoàn thành bài tập</h4>
+                                <p>Bài tập Lập trình Web - Tuần 10</p>
+                                <span class="activity-time">2 giờ trước</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon green">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>Điểm danh thành công</h4>
+                                <p>Môn Cơ sở dữ liệu - Tiết 1-3</p>
+                                <span class="activity-time">5 giờ trước</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon orange">
+                                <i class="fas fa-file-upload"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>Nộp bài báo cáo</h4>
+                                <p>Đồ án môn học - Mạng máy tính</p>
+                                <span class="activity-time">1 ngày trước</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-item">
+                            <div class="activity-icon purple">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>Nhận điểm mới</h4>
+                                <p>Kiểm tra giữa kỳ - Hệ điều hành: 8.5</p>
+                                <span class="activity-time">2 ngày trước</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notifications-section">
+                    <h2 class="section-title">Thông báo</h2>
+                    <div class="notification-list">
+                        <div class="notification-item urgent">
+                            <div class="notification-header">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <span class="notification-badge">Khẩn cấp</span>
+                            </div>
+                            <h4>Hạn nộp học phí học kỳ 2</h4>
+                            <p>Sinh viên cần hoàn thành nộp học phí trước ngày 30/11/2025</p>
+                            <span class="notification-time">Hôm nay</span>
+                        </div>
+
+                        <div class="notification-item">
+                            <div class="notification-header">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <h4>Lịch thi cuối kỳ đã được công bố</h4>
+                            <p>Xem chi tiết lịch thi tại mục Thời khóa biểu</p>
+                            <span class="notification-time">Hôm qua</span>
+                        </div>
+
+                        <div class="notification-item">
+                            <div class="notification-header">
+                                <i class="fas fa-calendar"></i>
+                            </div>
+                            <h4>Đăng ký môn học kỳ mới</h4>
+                            <p>Thời gian đăng ký: 01/12/2025 - 15/12/2025</p>
+                            <span class="notification-time">2 ngày trước</span>
+                        </div>
+
+                        <div class="notification-item">
+                            <div class="notification-header">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h4>Học bổng khuyến khích học tập</h4>
+                            <p>Chúc mừng bạn đạt học bổng học kỳ 1 năm 2025</p>
+                            <span class="notification-time">3 ngày trước</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Academic Performance -->
+            <div class="performance-section">
+                <h2 class="section-title">Kết quả học tập theo học kỳ</h2>
+                <div class="performance-grid">
+                    <div class="semester-card">
+                        <h3>Học kỳ 1 - 2024</h3>
+                        <div class="semester-stats">
+                            <div class="semester-stat">
+                                <span class="label">Điểm TB:</span>
+                                <span class="value">3.52</span>
+                            </div>
+                            <div class="semester-stat">
+                                <span class="label">Tín chỉ:</span>
+                                <span class="value">18</span>
+                            </div>
+                            <div class="semester-stat">
+                                <span class="label">Xếp loại:</span>
+                                <span class="value excellent">Giỏi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="semester-card">
+                        <h3>Học kỳ 2 - 2024</h3>
+                        <div class="semester-stats">
+                            <div class="semester-stat">
+                                <span class="label">Điểm TB:</span>
+                                <span class="value">3.38</span>
+                            </div>
+                            <div class="semester-stat">
+                                <span class="label">Tín chỉ:</span>
+                                <span class="value">20</span>
+                            </div>
+                            <div class="semester-stat">
+                                <span class="label">Xếp loại:</span>
+                                <span class="value good">Khá</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="semester-card current">
+                        <h3>Học kỳ 1 - 2025 <span class="current-badge">Hiện tại</span></h3>
+                        <div class="semester-stats">
+                            <div class="semester-stat">
+                                <span class="label">Điểm TB:</span>
+                                <span class="value">3.45</span>
+                            </div>
+                            <div class="semester-stat">
+                                <span class="label">Tín chỉ:</span>
+                                <span class="value">22</span>
+                            </div>
+                            <div class="semester-stat">
+                                <span class="label">Xếp loại:</span>
+                                <span class="value excellent">Giỏi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Student Dashboard -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h3 class="name_website">HỆ THỐNG QUẢN LÝ SINH VIÊN</h3>
+                    <div>
+                        <img src="/logo.jpg" alt="">
+                    </div>
+                    <p>
+                        Trường Đại học ABC<br>
+                        Email: info@university.edu.vn<br>
+                        Hotline: 1900-xxxx
+                    </p>
+                </div>
+                <div class="col-4">
+                    <h3 class="title">Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="">Trang chủ</a></li>
+                        <li><a href="">Thời khóa biểu</a></li>
+                        <li><a href="">Kết quả học tập</a></li>
+                        <li><a href="">Học phí</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h3 class="title">Hỗ trợ sinh viên</h3>
+                    <ul>
+                        <li><a href="">Hướng dẫn sử dụng</a></li>
+                        <li><a href="">Câu hỏi thường gặp</a></li>
+                        <li><a href="">Liên hệ hỗ trợ</a></li>
+                        <li><a href="">Góp ý</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="copyriht">Student Management System © 2025 - All Rights Reserved</p>
+    </footer>
+    <!-- end footer -->
+
+</body>
+</html>
